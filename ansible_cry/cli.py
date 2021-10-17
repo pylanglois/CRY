@@ -12,6 +12,9 @@ class CRY(cli.Application):
                        help="Encrypt by default, add -d to decrypt")
 
     def main(self):
+        if not self.nested_command:
+            print("No command given")
+            return 1  # error exit code
         with open('vault.pass', 'r') as pass_file:
             self.v = VaultLib([(None, VaultSecret(pass_file.read().encode()))])
 
