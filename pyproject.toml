@@ -1,8 +1,12 @@
 [tool.poetry]
 name = "CRY"
 version = '0.0.1'
-description = ""
+description = "Encrypt and decrypt ansible-vault string/file: Perfect for external tools."
 authors = ["Pierre-Yves Langlois"]
+license = "MIT"
+readme = "README.md"
+python = "^3.7"
+homepage = "https://github.com/pylanglois/CRY"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
