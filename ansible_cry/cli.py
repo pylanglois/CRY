@@ -63,10 +63,12 @@ class CRYString(cli.Application):
 
         if self.parent.decrypt:
             for s in strings:
-                print(decrypt(s, self.parent.vault_lib)[1])
+                values = decrypt(s, self.parent.vault_lib)
+                for val in values:
+                    print(val[1])
         else:
             for s in strings:
-                print(encrypt(s, self.parent.vault_lib))
+                print(encrypt(s.strip(), self.parent.vault_lib))
 
 
 def decrypt(s: str, v: VaultLib) -> str:
