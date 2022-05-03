@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ansible_cry"
-version = '1.0.1'
+version = '1.0.2'
 description = "Encrypt and decrypt ansible-vault string/file: Perfect for external tools."
 authors = ["Pierre-Yves Langlois"]
 license = "MIT"
